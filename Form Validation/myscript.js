@@ -15,7 +15,7 @@ function validate()
         document.getElementById("err1").style.display="none";
     }
 
-    //4. if count is not equal to 10, display the 'err2' element, else hide it
+    //4. if count is not equal to 10, display the 'err2' element, else hide it*/
     if(count != 10){
         document.getElementById("err2").style.display="block";
     }
