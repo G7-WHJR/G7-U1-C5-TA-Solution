@@ -2,26 +2,26 @@ function validate()
 {
     //1. Take input from name and contact fields , store them in variables
     var name = document.getElementById("userName").value;
-    var mobileNumber = document.getElementById("contactInput").value;
+    var phone = document.getElementById("contactInput").value;
 
     //2. calculate length of contact number and store i a variable named  "digitCount"
-    var digitCount= mobileNumber.length;
-    console.log(digitCount);
+    var count= phone.length;
+    console.log(count);
     
     //3. if name input is blank, display the 'errorName' span, else hide it
     if(name == ''){
-        document.getElementById('errorName').style.display="block";
+        document.getElementById('err1').style.display="block";
     }
     else{
-        document.getElementById('errorName').style.display="none";
+        document.getElementById('err1').style.display="none";
     }
 
-    //4. if digitCount is not equal to 10, display the 'errorContact' span, else hide it
-    if(digitCount != 10){
-        document.getElementById('errorContact').style.display="block";
+    //4. if Count is not equal to 10, display the 'errorContact' span, else hide it
+    if(count != 10){
+        document.getElementById('err2').style.display="block";
     }
     else{
-        document.getElementById('errorContact').style.display="none";
+        document.getElementById('err2').style.display="none";
     }
     
 }
